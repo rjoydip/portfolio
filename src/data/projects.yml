@@ -1,0 +1,30 @@
+# leave url blank to block the link
+# image is a icon aside the project name, you can use any icon from https://icon-sets.iconify.design/solar/
+---
+client:
+  - name: Craft It
+    url: https://github.com/7exp/craftit-android
+    description: My capstone project at Bangkit Academy
+    image: i-solar-sledgehammer-bold-duotone
+
+backend:
+  - name: Math With Code
+    description: Math learning platform with code
+    url: https://mathwithcode.tech
+    image: i-solar-calculator-bold-duotone
+
+hybrid:
+  - name: Math With Code
+    description: Math learning platform with code
+    url: https://mathwithcode.tech
+    image: i-solar-calculator-bold-duotone
+
+oss:
+  - name: Math With Code
+    description: Math learning platform with code
+    url: https://mathwithcode.tech
+    image: i-solar-calculator-bold-duotone
+  - name: DBook
+    description: Library admin panel with Astro
+    url:
+    image: i-solar-book-bookmark-bold-duotone

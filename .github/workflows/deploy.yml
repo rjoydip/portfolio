@@ -1,0 +1,38 @@
+name: Deployment
+
+on:
+  workflow_call:
+
+jobs:
+  prod:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 📦 Setup Bun
+        uses: oven-sh/setup-bun@v2
+        with:
+          bun-version: latest
+
+      - uses: actions/cache@v4
+        name: Setup cache
+        with:
+          path: ~/.bun/install/cache
+          key: ${{ runner.os }}-bun-${{ hashFiles('**/bun.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bun-
+
+      - name: 📦 Install deps
+        run: bun install --no-frozen-lockfile
+
+      - name: Install dependencies
+        run: bun install --no-frozen-lockfile
+
+      - name: Modify Astro Config for Static Output
+        run: |
+          sed -i 's/output: "hybrid"/output: "static"/' astro.config.mjs
+          sed -i 's/adapter: vercel()//' astro.config.mjs
+          sed -i 's#import vercel from "@astrojs/vercel/serverless";##' astro.config.mjs
+          sed -i 's#site: "https://rjoydip.com",#' astro.config.mjs

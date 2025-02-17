@@ -1,0 +1,82 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const socialMedia = [
+	{
+		link: "https://github.com/rjoydip",
+		icon: "i-myna-brand-github",
+		name: "Github",
+	},
+	{
+		link: "https://www.linkedin.com/in/rjoydip/",
+		icon: "i-myna-brand-facebook",
+		name: "Linkedin",
+	},
+	{
+		link: "https://twitter.com/Rjoydip11",
+		icon: "i-myna-brand-x",
+		name: "Twitter",
+	},
+];
+---
+
+<Layout
+	title="Joydip is rjoydip, welcome to my website"
+	description="Joydip Roy, experienced Software Engineer specializing in high-performance web applications, developer tools, and enterprise solutions, currently leading teams at Tech Mahindra."
+>
+	<div class="flex items-center justify-center min-h-70vh p-12">
+		<div class="w-full grid gap-3 max-w-xl slide-enter-content">
+			<h1 class="dark:text-#e5e7eb text-4xl font-bold item">
+				Joydip<span class="text-sm font-normal opacity-75 ml-1"
+					>or <span class="bold underline">rjoydip</span></span
+				>
+			</h1>
+			<div>
+				<p>Hi, I am Joydip Roy</p>
+			</div>
+			<p>
+				I'm a Software Engineer with 9+ years of experience,
+				specializing in building high-performance web applications and
+				developer tools. Currently working at Tech Mahindra, focusing on
+				enterprise-scale solutions and team leadership.
+				<a href="/projects" class="font-bold underline">projects here</a
+				>.
+			</p>
+			<p>
+				Experienced Software Engineer with a proven track record of
+				successfully leading multiple projects from inception to
+				completion. Skilled in fostering collaborative team environments
+				and adept at bringing out the best in team members. Demonstrated
+				ability to build and lead teams, contributing to organizational
+				growth. Proficient in TypeScript, JavaScript, and Node.js, with
+				over 9 years of hands-on experience in esteemed companies.
+			</p>
+			<div class="w-20 h-1px bg-gray opacity-50 mx-auto mt-2"></div>
+			<div class="text-sm">
+				<p>Find me on</p>
+				<div class="flex items-start justify-start gap-4 mt-2">
+					{
+						socialMedia.map((url) => (
+							<a
+								href={url.link}
+								class="btn-normal flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:(opacity-100 bg-#8882) opacity-90"
+								target="_blank"
+								rel="external nofollow noopener noreferrer"
+							>
+								<span
+									class:list={[
+										url.icon,
+										"inline-block",
+										"w-4",
+										"h-4",
+									]}
+								/>
+								{url.name}
+							</a>
+						))
+					}
+				</div>
+			</div>
+		</div>
+	</div>
+</Layout>
