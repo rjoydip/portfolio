@@ -7,18 +7,18 @@ const projectKeys = Object.keys(projects) as Array<keyof typeof projects>;
 ---
 
 <Layout
-	title="Joydip projects, take a look at my projects"
+	title="Projects - Joydip"
 	description="Here are some of the projects that i have done or work on."
 >
 	<div class="flex min-h-screen p-12 max-w-6xl mx-auto relative">
-		<main class="w-full flex flex-col gap-6">
+		<div class="w-full flex flex-col gap-6">
 			<div class="w-full flex flex-col gap-6 slide-enter-content">
 				<h1
 					class="text-center font-lexend text-3xl font-bold dark:text-#e5e7eb"
 				>
 					Projects
 				</h1>
-				<p class="text-center">Thing that i have done or work on</p>
+				<p class="text-center">Things I have done or worked on</p>
 			</div>
 			<div
 				class="flex flex-col gap-16"
@@ -38,13 +38,13 @@ const projectKeys = Object.keys(projects) as Array<keyof typeof projects>;
 
 						return (
 							<div class="flex flex-col gap-4 relative pt-8">
-								<h2 class="absolute text-6xl top-0 left-0 font-mono stroke-blueGray dark:(text-d-base) text-l-base opacity-20 font-bold capitalize -z-1 text-stroke slide-enter-content">
+								<div class="absolute text-6xl top-0 left-0 font-mono stroke-blueGray dark:(text-d-base) text-l-base opacity-20 font-bold capitalize -z-1 text-stroke slide-enter-content">
 									<div
 										style={`--enter-stage: ${prevProjectLength + 2} !important;`}
 									>
 										{key}
 									</div>
-								</h2>
+								</div>
 								<div class=" grid sm:grid-cols-2 md:grid-cols-3 gap-3 slide-enter-content">
 									{_projects.map(
 										(p: Project, projectIndex) => {
@@ -58,7 +58,7 @@ const projectKeys = Object.keys(projects) as Array<keyof typeof projects>;
 														<div
 															class:list={[
 																`w-full h-10 w-10 aspect-square grow-0 shrink object-contain rounded-lg block`,
-																p.image,
+																p.icon,
 															]}
 														/>
 													</div>
@@ -106,7 +106,20 @@ const projectKeys = Object.keys(projects) as Array<keyof typeof projects>;
 					})
 				}
 			</div>
-		</main>
+
+			<div class="mx-auto mt10 text-center">
+				<div class="block mt-5">
+					<a href="" class="op50 hover:op75">All projects sort by compnay</a>
+				</div>
+			</div>
+
+			<div
+				class="slide-enter animate-delay-500 print:hidden"
+			>
+				<span class="font-mono op50">&gt; </span>
+				<a href="/" class="font-mono op50 hover:op75">cd ..</a>
+			</div>
+		</div>
 	</div>
 </Layout>
 

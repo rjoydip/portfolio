@@ -1,5 +1,5 @@
 ---
-layout: '../layouts/PlainMarkdown.astro'
+layout: '../layouts/Markdown.astro'
 title: 'Disclaimer'
 ---
 

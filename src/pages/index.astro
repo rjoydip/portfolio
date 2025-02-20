@@ -17,11 +17,16 @@ const socialMedia = [
 		icon: "i-myna-brand-x",
 		name: "Twitter",
 	},
+	{
+		link: "https://facebook.com/rjoydip",
+		icon: "i-myna-brand-facebook",
+		name: "Facebook",
+	},
 ];
 ---
 
 <Layout
-	title="Joydip is rjoydip, welcome to my website"
+	title="Joydip"
 	description="Joydip Roy, experienced Software Engineer specializing in high-performance web applications, developer tools, and enterprise solutions, currently leading teams at Tech Mahindra."
 >
 	<div class="flex items-center justify-center min-h-70vh p-12">
@@ -31,16 +36,20 @@ const socialMedia = [
 					>or <span class="bold underline">rjoydip</span></span
 				>
 			</h1>
-			<div>
-				<p>Hi, I am Joydip Roy</p>
-			</div>
+			<p>Hi, I am Joydip Roy</p>
+			<p>
+				Working at <a
+					href="https://www.techmahindra.com/"
+					class="font-bold transition-all duration-300 ease-in-out hover:(opacity-100 bg-#8882) opacity-90"
+					rel="external nofollow noopener noreferrer">Tech Mahindra</a
+				>
+			</p>
 			<p>
 				I'm a Software Engineer with 9+ years of experience,
 				specializing in building high-performance web applications and
 				developer tools. Currently working at Tech Mahindra, focusing on
 				enterprise-scale solutions and team leadership.
-				<a href="/projects" class="font-bold underline">projects here</a
-				>.
+				<a href="/projects" class="font-bold">projects here</a>.
 			</p>
 			<p>
 				Experienced Software Engineer with a proven track record of
@@ -51,6 +60,15 @@ const socialMedia = [
 				growth. Proficient in TypeScript, JavaScript, and Node.js, with
 				over 9 years of hands-on experience in esteemed companies.
 			</p>
+			<p>
+				Outside of programming, I enjoy cycling and village visiting.
+				Some of my photos can be found on <a
+					href="https://facebook.com/rjoydip"
+					class="font-bold"
+					rel="external nofollow noopener noreferrer">Facebook</a
+				>. Right now I live in Paris. If you are around, feel free to
+				reach me out
+			</p>
 			<div class="w-20 h-1px bg-gray opacity-50 mx-auto mt-2"></div>
 			<div class="text-sm">
 				<p>Find me on</p>
@@ -59,7 +77,7 @@ const socialMedia = [
 						socialMedia.map((url) => (
 							<a
 								href={url.link}
-								class="btn-normal flex items-center justify-center gap-2 transition-all duration-300 ease-in-out hover:(opacity-100 bg-#8882) opacity-90"
+								class="flex items-center justify-center gap-2 transition-all duration-300 ease-in-out"
 								target="_blank"
 								rel="external nofollow noopener noreferrer"
 							>
@@ -75,6 +93,9 @@ const socialMedia = [
 							</a>
 						))
 					}
+				</div>
+				<div class="mt-2">
+					Or mail me at <span>joydipand@gmail.com</span>
 				</div>
 			</div>
 		</div>

@@ -48,8 +48,10 @@ export default defineConfig({
     presetWebFonts({
       provider: 'google',
       fonts: {
-        sans: 'Lexend:300,400,500,700',
-        mono: 'JetBrains Mono:400',
+        sans: 'Inter',
+        mono: 'DM Mono',
+        condensed: 'Roboto Condensed',
+        wisper: 'Bad Script',
       },
     }),
     presetIcons({

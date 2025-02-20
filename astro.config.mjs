@@ -1,49 +1,58 @@
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
-import { pluginCollapsibleSections } from '@expressive-code/plugin-collapsible-sections'
-import { pluginLineNumbers } from '@expressive-code/plugin-line-numbers'
 import yaml from '@rollup/plugin-yaml'
-
-import expressiveCode from 'astro-expressive-code'
 import { defineConfig } from 'astro/config'
 import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis'
 import rehypeExternalLinks from 'rehype-external-links'
-import rehypeMath from 'rehype-katex'
+import rehypePresetMinify from 'rehype-preset-minify'
+import { remarkAlert } from 'remark-github-blockquote-alert'
+import {
+  presetAttributify,
+  presetTypography
+} from 'unocss'
 import UnoCss from 'unocss/astro'
+import { remarkReadingTime } from './plugins/remark-reading-time.mjs'
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://rjoydip.com',
   vite: {
     plugins: [yaml()],
   },
   markdown: {
-    remarkPlugins: [],
+    remarkPlugins: [
+      remarkReadingTime,
+      remarkAlert,
+    ],
     rehypePlugins: [
       rehypeAccessibleEmojis,
       [rehypeExternalLinks, {
         rel: ['external', 'nofollow', 'noopener', 'noreferrer'],
         target: ['_blank'],
       }],
-      rehypeMath,
     ],
+    shikiConfig: {
+      theme: 'dracula',
+      wrap: true,
+    },
   },
   integrations: [
-    expressiveCode({
-      themes: ['catppuccin-frappe', 'catppuccin-latte'],
-      plugins: [pluginCollapsibleSections(), pluginLineNumbers()],
-      defaultProps: {
-        showLineNumbers: true,
-        wrap: true,
-      },
+    mdx({
+      optimize: true,
+      rehypePlugins: [rehypePresetMinify],
+      remarkRehype: { footnoteLabel: 'Footnotes' },
     }),
-    mdx(),
     sitemap({
       changefreq: 'monthly',
       priority: 0.7,
       lastmod: new Date().toISOString().split('T')[0],
     }),
-    UnoCss({ injectReset: true }),
+    UnoCss({
+      injectReset: true,
+      presets: [
+        presetTypography(),
+        presetAttributify()
+      ]
+    }),
   ],
   output: 'static',
 })
