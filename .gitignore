@@ -2,6 +2,8 @@
 dist/
 # generated types
 .astro/
+# wrangler output
+.wrangler
 
 # dependencies
 node_modules/
@@ -22,7 +24,3 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
-.vercel/
-
-# Use bun only
-pnpm-lock.yaml

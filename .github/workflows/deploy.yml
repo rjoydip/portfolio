@@ -11,7 +11,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 📦 Setup Bun
+      - name: Setup Bun
         uses: oven-sh/setup-bun@v2
         with:
           bun-version: latest
@@ -24,15 +24,21 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-bun-
 
-      - name: 📦 Install deps
+      - name: Install deps
         run: bun install --no-frozen-lockfile
 
       - name: Install dependencies
         run: bun install --no-frozen-lockfile
 
-      - name: Modify Astro Config for Static Output
+      - name: Modify Astro Config
         run: |
           sed -i 's/output: "hybrid"/output: "static"/' astro.config.mjs
-          sed -i 's/adapter: vercel()//' astro.config.mjs
-          sed -i 's#import vercel from "@astrojs/vercel/serverless";##' astro.config.mjs
-          sed -i 's#site: "https://rjoydip.com",#' astro.config.mjs
+          sed -i 's/adapter: cloudflare()//' astro.config.mjs
+          sed -i 's#import cloudflare from '@astrojs/cloudflare'##' astro.config.mjs
+
+      uses: cloudflare/wrangler-action@v3
+      with:
+        environment: production
+        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+        command: pages deploy ./dist --project-name=rjoydip.com
+        gitHubToken: ${{ secrets.GITHUB_TOKEN }}

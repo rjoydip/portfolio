@@ -84,16 +84,17 @@ const { title, description, pubDate, updatedDate, headings, minutesRead } =
 	}
 
 	.prose :where(p > code) {
-		color: var(--c-scrollbar-hover) !important;
-		background-color: var(--bg-code) !important;
+		color: var(--fg-deep) !important;
+		background-color: var(--c-scrollbar) !important;
 		font-size: 0.875em;
 		padding: 0.2em 0.3em;
 		border-radius: 0.25rem;
 	}
 
 	.prose :where(a):not(:where(.navigation *)):not(:where(.heading-container *)) {
-		color: var(--c-scrollbar-hover) !important;
-		background-color: var(--bg-code) !important;
+		color: var(--fg-deep) !important;
+		background-color: var(--c-scrollbar) !important;
+		font-size: 0.875em;
 		border-radius: 0.25rem !important;
 		padding: 0.2em 0.3em !important;
 		text-decoration: none !important;
@@ -112,5 +113,11 @@ const { title, description, pubDate, updatedDate, headings, minutesRead } =
 		color: var(--c-scrollbar);
 		margin-top: 1em !important;
 		margin-bottom: 1em !import;
+		text-align: center;
+	}
+
+	.prose :where(figure > img) {
+		margin: 0 auto;
+		border-radius: .25em;
 	}
 </style>

@@ -16,7 +16,9 @@ import { remarkReadingTime } from './plugins/remark-reading-time.mjs'
 export default defineConfig({
   site: 'https://rjoydip.com',
   vite: {
-    plugins: [yaml()],
+    plugins: [
+      yaml(),
+    ],
   },
   markdown: {
     remarkPlugins: [
