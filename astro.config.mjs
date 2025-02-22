@@ -1,3 +1,4 @@
+import cloudflare from '@astrojs/cloudflare'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import yaml from '@rollup/plugin-yaml'
@@ -16,7 +17,9 @@ import { remarkReadingTime } from './plugins/remark-reading-time.mjs'
 export default defineConfig({
   site: 'https://rjoydip.com',
   vite: {
-    plugins: [yaml()],
+    plugins: [
+      yaml(),
+    ],
   },
   markdown: {
     remarkPlugins: [
@@ -54,5 +57,6 @@ export default defineConfig({
       ]
     }),
   ],
-  output: 'static',
+  output: 'server',
+  adapter: cloudflare()
 })
