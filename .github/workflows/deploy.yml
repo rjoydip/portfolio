@@ -36,9 +36,10 @@ jobs:
           sed -i 's/adapter: cloudflare()//' astro.config.mjs
           sed -i 's#import cloudflare from '@astrojs/cloudflare'##' astro.config.mjs
 
-       uses: cloudflare/wrangler-action@v3
-       with:
-        environment: production
-        apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-        command: pages deploy ./dist --project-name=rjoydip.com
-        gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        uses: cloudflare/wrangler-action@v3
+        with:
+          environment: production
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          command: pages deploy ./dist --project-name=rjoydip.com
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
