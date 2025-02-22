@@ -2,6 +2,11 @@ name: Deployment
 
 on:
   workflow_call:
+    secrets:
+      CLOUDFLARE_API_TOKEN:
+        required: true
+      GITHUB_TOKEN:
+        required: true
 
 jobs:
   prod:
@@ -40,5 +45,5 @@ jobs:
         uses: cloudflare/wrangler-action@v3
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          command: pages deploy ./dist --project-name=rjoydip.com
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+          command: pages deploy ./dist --project-name=rjoydip.com
