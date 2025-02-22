@@ -1,4 +1,4 @@
-import cloudflare from '@astrojs/cloudflare
+import cloudflare from '@astrojs/cloudflare'
 import mdx from '@astrojs/mdx'
 import sitemap from '@astrojs/sitemap'
 import yaml from '@rollup/plugin-yaml'
