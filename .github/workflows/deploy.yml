@@ -39,7 +39,6 @@ jobs:
       - name: Deploy
         uses: cloudflare/wrangler-action@v3
         with:
-          environment: production
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           command: pages deploy ./dist --project-name=rjoydip.com
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
