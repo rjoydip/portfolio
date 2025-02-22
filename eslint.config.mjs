@@ -10,4 +10,6 @@ export default antfu({
   unicorn: true,
   regexp: true,
   astro: true,
+}, {
+  ignores: ['**/src/content/**/*.md']
 })

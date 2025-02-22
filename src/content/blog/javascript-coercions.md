@@ -16,8 +16,8 @@ Object, it is also part of the Number object: Number.NaN. It is still a
 Numeric data type, but it is undefined as a real number
 
 ```js
-Number.MAX_VALUE >> 1.7976931348623157e+308
-console.dir(Number) > get more info about Number
+Number.MAX_VALUE // 1.7976931348623157e+308
+console.dir(Number) // get more info about Number
 typeof (3.2317006071311 * 10e616) / (3.2317006071311 * 10e616)
 ```
 

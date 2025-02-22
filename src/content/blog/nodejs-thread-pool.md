@@ -72,7 +72,7 @@ The absolute maximum value is **1024**.
 ### Example
 
 ```js
-const {readdir} = require('fs');
+const {readdir} = require('node:fs');
 
 process.env.UV_THREADPOOL_SIZE = 6; // This will work
 
