@@ -19,9 +19,3 @@ jobs:
 
   build:
     uses: ./.github/workflows/build.yml
-
-  deploy:
-    needs: [lint, build]
-    uses: ./.github/workflows/deploy.yml
-    secrets:
-      CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
