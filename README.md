@@ -4,9 +4,6 @@ Personal Blog & website built with <a href="https://astro.build/" target="_blank
 
 Visit [rjoydip.com](https://rjoydip.com) for a live preview.
 
-[!NOTE]
-The data will be moved to a CMS in the future.
-
 ## Installation
 
 To run this project locally, you need to have Node.js and npm (or pnpm, yarn, or bun) installed on your machine.

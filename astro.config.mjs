@@ -7,6 +7,7 @@ import { rehypeAccessibleEmojis } from 'rehype-accessible-emojis'
 import rehypeExternalLinks from 'rehype-external-links'
 import rehypePresetMinify from 'rehype-preset-minify'
 import { remarkAlert } from 'remark-github-blockquote-alert'
+import { isWorkerd } from 'std-env'
 import {
   presetAttributify,
   presetTypography
@@ -57,6 +58,6 @@ export default defineConfig({
       ]
     }),
   ],
-  output: 'server',
+  output: isWorkerd ? 'server' : 'static',
   adapter: cloudflare()
 })

@@ -1,24 +1,25 @@
 ---
+import { fbLink, githubLink, linkedinLink, techMLink, xLink } from "../data/links";
 import Layout from "../layouts/Layout.astro";
 
 const socialMedia = [
 	{
-		link: "https://github.com/rjoydip",
+		link: githubLink,
 		icon: "i-myna-brand-github",
 		name: "Github",
 	},
 	{
-		link: "https://www.linkedin.com/in/rjoydip/",
+		link: linkedinLink,
 		icon: "i-myna-brand-facebook",
 		name: "Linkedin",
 	},
 	{
-		link: "https://twitter.com/Rjoydip11",
+		link: xLink,
 		icon: "i-myna-brand-x",
 		name: "Twitter",
 	},
 	{
-		link: "https://facebook.com/rjoydip",
+		link: fbLink,
 		icon: "i-myna-brand-facebook",
 		name: "Facebook",
 	},
@@ -39,7 +40,7 @@ const socialMedia = [
 			<p>Hi, I am Joydip Roy</p>
 			<p>
 				Working at <a
-					href="https://www.techmahindra.com/"
+					href={techMLink}
 					class="font-bold transition-all duration-300 ease-in-out hover:(opacity-100 bg-#8882) opacity-90"
 					rel="external nofollow noopener noreferrer">Tech Mahindra</a
 				>
@@ -63,7 +64,7 @@ const socialMedia = [
 			<p>
 				Outside of programming, I enjoy cycling and village visiting.
 				Some of my photos can be found on <a
-					href="https://facebook.com/rjoydip"
+					href=fbLink
 					class="font-bold"
 					rel="external nofollow noopener noreferrer">Facebook</a
 				>. Right now I live in Paris. If you are around, feel free to
