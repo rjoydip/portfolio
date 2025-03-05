@@ -1,8 +1,10 @@
-# rjoydip.com
+# portfolio
+
+[![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
 
 Personal Blog & website built with <a href="https://astro.build/" target="_blank">Astro</a> and <a href="https://(https://unocss.dev/)" target="_blank">UnoCSS</a>.
 
-Visit [rjoydip.com](https://rjoydip.com) for a live preview.
+Visit [rjoydip-com.pages.dev](https://rjoydip-com.pages.dev) for a live preview.
 
 ## Installation
 
@@ -11,7 +13,7 @@ To run this project locally, you need to have Node.js and npm (or pnpm, yarn, or
 - Clone this repository:
 
 ```bash
-git clone [https://github.com/rjoydip/rjoydip.com.git](https://github.com/rjoydip/rjoydip.com.git)
+git clone [https://github.com/rjoydip/portfolio.git](https://github.com/rjoydip/portfolio.git)
 ```
 
 - Install the dependencies:

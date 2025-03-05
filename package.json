@@ -1,5 +1,5 @@
 {
-  "name": "rjoydip.com",
+  "name": "portfolio",
   "type": "module",
   "version": "0.0.0",
   "description": "Personal Blog & website",
@@ -13,23 +13,23 @@
     "typecheck": "astro check"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^4.3.0",
+    "@antfu/eslint-config": "^4.5.1",
     "@astrojs/check": "^0.9.4",
-    "@astrojs/cloudflare": "^12.2.2",
-    "@astrojs/mdx": "^4.0.8",
+    "@astrojs/cloudflare": "^12.2.3",
+    "@astrojs/mdx": "^4.1.0",
     "@astrojs/rss": "^4.0.11",
     "@astrojs/sitemap": "^3.2.1",
     "@iconify-json/icon-park-outline": "^1.2.2",
-    "@iconify-json/material-symbols": "^1.2.14",
+    "@iconify-json/material-symbols": "^1.2.15",
     "@iconify-json/mynaui": "^1.2.9",
     "@iconify-json/ri": "^1.2.5",
     "@iconify-json/solar": "^1.2.2",
     "@iconify-json/streamline": "^1.2.2",
     "@rollup/plugin-yaml": "^4.1.2",
-    "@types/bun": "^1.2.3",
-    "@typescript-eslint/parser": "^8.25.0",
+    "@types/bun": "^1.2.4",
+    "@typescript-eslint/parser": "^8.26.0",
     "@unocss/reset": "^65.5.0",
-    "astro": "^5.3.1",
+    "astro": "^5.4.2",
     "eslint": "^9.21.0",
     "eslint-plugin-astro": "^1.3.1",
     "eslint-plugin-jsx-a11y": "^6.10.2",
@@ -40,10 +40,10 @@
     "rehype-external-links": "^3.0.0",
     "rehype-preset-minify": "^7.0.1",
     "remark-github-blockquote-alert": "^1.3.0",
-    "std-env": "^3.8.0",
-    "typescript": "^5.7.3",
-    "typescript-eslint": "^8.25.0",
+    "std-env": "^3.8.1",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.26.0",
     "unocss": "^65.5.0",
-    "wrangler": "^3.109.3"
+    "wrangler": "^3.112.0"
   }
 }
