@@ -24,6 +24,8 @@ const socialMedia = [
 		name: "Facebook",
 	},
 ];
+
+const numberOfYears = new Date().getFullYear() - 2016
 ---
 
 <Layout
@@ -46,7 +48,7 @@ const socialMedia = [
 				>
 			</p>
 			<p>
-				I'm a Software Engineer with 9+ years of experience,
+				I'm a Software Engineer with <span class="font-bold">{numberOfYears}+</span> years of experience,
 				specializing in building high-performance web applications and
 				developer tools. Currently working at Tech Mahindra, focusing on
 				enterprise-scale solutions and team leadership.
@@ -58,16 +60,12 @@ const socialMedia = [
 				completion. Skilled in fostering collaborative team environments
 				and adept at bringing out the best in team members. Demonstrated
 				ability to build and lead teams, contributing to organizational
-				growth. Proficient in TypeScript, JavaScript, and Node.js, with
-				over 9 years of hands-on experience in esteemed companies.
+				growth. Proficient in <span class="bold">TypeScript</span>, <span class="bold">JavaScript</span>, <span class="bold">React.js</span>, and <span class="bold">Node.js</span>, with
+				over hands-on experience in esteemed companies.
 			</p>
 			<p>
 				Outside of programming, I enjoy cycling and village visiting.
-				Some of my photos can be found on <a
-					href=fbLink
-					class="font-bold"
-					rel="external nofollow noopener noreferrer">Facebook</a
-				>. Right now I live in Paris. If you are around, feel free to
+				Right now I live in <span class="font-bold">Kolkata, India</span>. If you are around, feel free to
 				reach me out
 			</p>
 			<div class="w-20 h-1px bg-gray opacity-50 mx-auto mt-2"></div>
