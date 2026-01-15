@@ -16,7 +16,7 @@ import UnoCss from 'unocss/astro'
 import { remarkReadingTime } from './plugins/remark-reading-time.mjs'
 
 export default defineConfig({
-  site: 'https://rjoydip-com.pages.dev',
+  site: 'https://rjoydip.com',
   vite: {
     plugins: [
       yaml(),

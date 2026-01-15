@@ -1,0 +1,14 @@
+working_at: Tech Mahindra
+summary_main: |
+  I'm a Software Engineer with <span class="font-bold">{{numberOfYears}}+</span> years of experience,
+  specializing in building high-performance web applications and
+  developer tools. Currently working at Tech Mahindra, focusing on
+  enterprise-scale solutions and team leadership.
+summary_additional: |
+  Experienced Software Engineer with a proven track record of
+  successfully leading multiple projects from inception to
+  completion. Skilled in fostering collaborative team environments
+  and adept at bringing out the best in team members. Demonstrated
+  ability to build and lead teams, contributing to organizational
+  growth.
+proficient: [Node.js, TypeScript, JavaScript, React.js, Generative AI]
