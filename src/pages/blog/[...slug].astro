@@ -24,7 +24,7 @@ export async function getStaticPaths() {
 }
 type Props = CollectionEntry<"blog">;
 
-// @ts-ignore
+// @ts-expect-error
 const { post, prevPost, nextPost } = Astro.props;
 const { Content, headings, remarkPluginFrontmatter } = await post.render();
 ---

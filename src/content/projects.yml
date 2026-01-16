@@ -1,0 +1,153 @@
+tech_mahindra:
+  - name: NantMedia - LATimes Digitization
+    url: https://www.latimes.com/
+    description: Generative AI-powered digitization of newspaper archives with automated ingestion, OCR processing, and publishing workflows. Implemented Azure-based scalable architecture, reducing processing time by 55% with GitLab CI/CD pipelines integrated with AKS & ACR.
+    icon: i-solar-newspaper-bold-duotone
+    techStacks:
+      - azure
+      - python
+      - vertexai
+      - gitlab
+      - kubernetes
+    client_country: USA
+
+  - name: Macmillan Learning Platform
+    url: https://macmillaneducation.in/
+    description: Enterprise publishing infrastructure with Node.js & TypeScript, reducing deployment errors by 70%. Won internal Hackathon for Retrieval-Augmented Generation (RAG) tool to query complex course documentation, improving information retrieval speed for educators.
+    icon: i-solar-book-bold-duotone
+    techStacks:
+      - nodejs
+      - typescript
+      - aws
+      - jenkins
+      - bitbucket
+      - langchain
+      - pgvector
+    client_country: USA
+
+infosys:
+  - name: CVS Health Management System
+    url: https://www.cvshealth.com/
+    description: Healthcare components and validation systems with HIPAA and PIPEDA compliance. Orchestrated secure microservices supporting daily active healthcare users with encryption and audit protocols, reducing claim rejection rates.
+    icon: i-solar-hospital-bold-duotone
+    techStacks: 
+      - gmc
+      - groovy
+      - jenkins
+    client_country: Canada
+
+  - name: Northwestern Mutual Financial System
+    url: https://www.northwesternmutual.com/
+    description: Secure ETL pipelines processing millions of monthly financial transactions with 99% uptime. Architected Spring Batch systems with Kafka and Spring Boot, improving release efficiency via GitLab CI/CD automation.
+    icon: i-solar-dollar-bold-duotone
+    techStacks:
+      - springboot
+      - kafka
+      - gitlab
+      - jenkins
+      - etl
+    client_country: USA
+
+webskitters:
+  - name: Scope App
+    description: Clinical insights platform with analytics dashboard for healthcare professionals featuring real-time insights and dynamic reporting. Evidence-based medicine content written in plain language for nationwide audience of young physicians.
+    url: https://appadvice.com/app/the-scope-app/1398604443
+    icon: i-solar-stethoscope-bold-duotone
+    techStacks:
+      - nodejs
+      - mongodb
+      - express
+      - typescript
+      - gitlab
+
+  - name: LetsEat
+    description: Corporate meal delivery system with multi-tenant support serving multiple client organizations. Features Role-Based Access Control (RBAC), meal planning, custom order management, and reporting modules with workplace delivery integration.
+    url: https://play.google.com/store/apps/details?id=com.ressgroup.ress
+    icon: i-icon-park-outline-bowl
+    techStacks:
+      - nodejs
+      - express
+      - mongodb
+      - typescript
+      - gitlab
+
+  - name: Inagrab
+    description: Best deal search engine enabling users to make optimal purchasing decisions quickly with cross-platform mobile experience.
+    url: https://play.google.com/store/apps/details?id=in.youstart.inagrab
+    icon: i-solar-shop-bold-duotone
+    techStacks: 
+      - angular
+      - ionic
+      - nodejs
+      - typescript
+      - gitlab
+
+  - name: Tapp - Drinking Game
+    description: Multi-player drinking game app with local storage and fallback sync mechanisms for offline support. Interactive gameplay logic with real-time synchronization.
+    url: https://play.google.com/store/apps/details?id=com.dat.tapp
+    icon: i-streamline-champagne-party-alcohol
+    techStacks:
+      - angular
+      - ionic
+      - nodejs
+      - typescript
+      - gitlab
+
+  - name: Classified
+    description: Cross-platform classified application with responsive UI optimized for seamless performance on iOS & Android. Firebase backend enables real-time updates with minimal synchronization latency.
+    url: https://play.google.com/store/apps/details?id=com.classifieds.universe
+    icon: i-solar-list-bold-duotone
+    techStacks:
+      - angular
+      - ionic
+      - firebase
+      - nodejs
+      - typescript
+      - gitlab
+
+  - name: Mizizi
+    description: Salon booking platform connecting users with stylists, barbers, and beauty technicians worldwide. Firebase-based system with Stripe integration for secure monthly transaction management.
+    url:
+    icon: i-solar-scissors-bold-duotone
+    techStacks:
+      - angular
+      - firebase
+      - stripe
+      - nodejs
+      - typescript
+      - gitlab
+
+  - name: Card Sort
+    description: Real-time behavioral analytics application with Electron-based desktop interface. Features real-time tracking and user activity data collection, adopted for academic research with admin-manageable analytics dashboard.
+    url: 
+    icon: i-solar-card-bold-duotone
+    techStacks:
+      - nodejs
+      - electron
+      - firebase
+      - typescript
+      - gitlab
+
+ascentspark:
+  - name: Menu Pulse
+    description: Restaurant-based social network and menu wiki platform with mobile-first responsive interface. Features restaurant ratings, dynamic menu management, pictures, and community reviews for nationwide restaurant discovery.
+    url: https://www.menupulse.com
+    icon: i-material-symbols-food-bank-outline
+    techStacks:
+      - angular
+      - laravel
+      - bootstrap
+      - ionic
+      - javascript
+      - gitlab
+
+  - name: Bridge Boffin
+    description: High-performance card-play interface and scoring engine for online bridge competitions. Features centralized user dashboard, automated PDF reporting system for detailed performance analysis, and complex game logic supporting real-time competitive environments with low latency.
+    url: https://www.facebook.com/bridgeboffin/
+    icon: i-icon-park-outline-poker
+    techStacks:
+      - laravel
+      - php
+      - bootstrap
+      - javascript
+      - gitlab
