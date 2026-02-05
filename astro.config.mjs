@@ -59,5 +59,7 @@ export default defineConfig({
     }),
   ],
   output: isWorkerd ? 'server' : 'static',
-  adapter: cloudflare()
+  adapter: cloudflare({
+    imageService: 'compile'
+  })
 })

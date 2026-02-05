@@ -1,8 +1,8 @@
 ---
-import { fbLink, githubLink, linkedinLink, techMLink, xLink } from "../content/links"; 
+import Divider from "../components/Divider.astro" 
+import { fbLink, githubLink, linkedinLink, xLink } from "../content/links";
 import profile from '../content/profile.yml';
 import Layout from "../layouts/Layout.astro";
-import Divider from "../components/Divider.astro"
 
 const socialMedia = [
 	{
@@ -41,15 +41,15 @@ const numberOfYears = new Date().getFullYear() - 2016
 					>or <span class="bold underline">rjoydip</span></span
 				>
 			</h1>
-			<p>Hi, I am Joydip Roy, working at <a
+			<p>Hi, I am Joydip Roy<!-- , working at <a
 				href={techMLink}
 				class="font-bold transition-all duration-300 ease-in-out hover:(opacity-100 bg-#8882) opacity-90"
 				rel="external nofollow noopener noreferrer">{profile.working_at}</a
-			></p>
+			> --></p>
 			<Divider />
 			<Fragment>
 				<p>
-					<Fragment set:html={profile.summary_main.replace("{{numberOfYears}}", numberOfYears)} />  <a href="/projects" class="font-bold">projects here</a>.
+					<Fragment set:html={profile.summary_main.replace("{{numberOfYears}}", numberOfYears)} />  <a href="/projects" class="underline">projects here</a>.
 				</p>
 				<p>
 					<Fragment set:html={profile.summary_additional} />
@@ -58,7 +58,7 @@ const numberOfYears = new Date().getFullYear() - 2016
 					<Fragment set:html={profile.summary_others} />
 				</p>
 				<p>
-					Right now I live in <span class="font-bold">Kolkata, India</span>. If you are around, feel free to
+					Right now I live in <span class="font-bold text-sm">Kolkata, India</span>. If you are around, feel free to
 					reach me out
 				</p>
 			</Fragment>
