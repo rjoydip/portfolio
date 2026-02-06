@@ -1,12 +1,14 @@
 ---
 layout: '../layouts/Markdown.astro'
 title: 'Privacy Policy'
-updatedDate: "Aug 23 2025"
+updatedDate: "February 06 2026"
 ---
 
 # Privacy Policy
 
-Last Updated February 23, 2025
+Last Updated February 06, 2026
+
+## Introduction
 
 This page outlines the privacy practices of our website.
 

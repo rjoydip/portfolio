@@ -1,6 +1,4 @@
 export const techMLink = "https://www.techmahindra.com/"
-export const fbLink = "https://facebook.com/rjoydip/"
 export const xLink = "https://x.com/Rjoydip11/"
 export const linkedinLink= "https://www.linkedin.com/in/rjoydip/"
 export const githubLink = "https://github.com/rjoydip/"
-export const websiteLink = "https://rjoydip-com.pages.dev/"
