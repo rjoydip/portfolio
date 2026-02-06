@@ -3,8 +3,8 @@ import {
   defineConfig,
   presetIcons,
   presetTypography,
-  presetUno,
   presetWebFonts,
+  presetWind3,
   transformerVariantGroup,
 } from 'unocss'
 
@@ -41,7 +41,7 @@ export default defineConfig({
     transformerVariantGroup(),
   ],
   presets: [
-    presetUno({
+    presetWind3({
       dark: 'class',
     }),
     presetTypography(),

@@ -23,7 +23,7 @@
     "@astrojs/rss": "4.0.15",
     "@astrojs/sitemap": "3.7.0",
     "@iconify-json/icon-park-outline": "^1.2.4",
-    "@iconify-json/material-symbols": "^1.2.53",
+    "@iconify-json/material-symbols": "^1.2.54",
     "@iconify-json/mynaui": "^1.2.17",
     "@iconify-json/ri": "^1.2.9",
     "@iconify-json/solar": "^1.2.5",
@@ -47,10 +47,10 @@
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.54.0",
     "unocss": "^66.6.0",
-    "wrangler": "^4.62.0"
+    "wrangler": "^4.63.0"
   },
   "simple-git-hooks": {
-		"pre-commit": "bun install --ignore-scripts --offline && bun run lint && bun run typecheck",
+    "pre-commit": "bun install --ignore-scripts --offline && bun run lint && bun run typecheck",
     "pre-push": "bun run build"
-	}
+  }
 }
